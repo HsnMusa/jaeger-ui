@@ -55,13 +55,13 @@ export class PageImpl extends React.Component<TProps> {
     const contentCls = cx({ 'Page--content': true, 'Page--content--no-embedded': !embedded });
     return (
       <div>
-        <Helmet title="Jaeger UI" />
+        {/* <Helmet title="Jaeger UI" /> */}
         <Layout>
-          {!embedded && (
-            <Header className="Page--topNav">
-              <TopNav />
-            </Header>
-          )}
+          {/* {!embedded && ( */}
+          {/*   <Header className="Page--topNav"> */}
+          {/*     <TopNav /> */}
+          {/*   </Header> */}
+          {/* )} */}
           <Content className={contentCls}>{this.props.children}</Content>
         </Layout>
       </div>
